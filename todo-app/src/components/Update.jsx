@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 
 const Update = () => {
+    
+
+
+  const [] = useState([]);
+  const upRef = useRef("");
+  let a = setState();
+
+
   return (
-    <div>Update</div>
+    
+    <div>
+
+ 
+    </div>
+    
   )
 }
 
