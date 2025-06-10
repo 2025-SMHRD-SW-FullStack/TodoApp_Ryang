@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Delete = () => {
+const Delete = ({todos, setTodos, item, index}) => {
+
+  const deleteTodo = () => {
+    todos.splice(index, 1)
+    let newTodos = todos.filter((i) => i!={index})
+    setTodos(newTodos)
+    console.log(todos)
+  }
+
   return (
-    <div>Delete</div>
+    <div>
+      <button onClick={deleteTodo}>삭제</button>
+    </div>
   )
 }
 
