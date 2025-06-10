@@ -34,13 +34,13 @@ const Todo = () => {
       <div>
         {todos.map((item,index) => (
           
-          <p key={index}>
+          <div key={index}>
             <CheckBox todos ={todos} setTodos = {setTodos}item={item} index={index}/>
             <Delete todos ={todos} setTodos = {setTodos}item={item} index={index}/>
             <Update todos ={todos} setTodos = {setTodos}item={item} index={index}/>
             <BottomMove todos ={todos} setTodos = {setTodos}item={item} index={index}/>
             <TopMove todos ={todos} setTodos = {setTodos}item={item} index={index}/>
-          </p>
+          </div>
         ))}
       </div>
     </div>
