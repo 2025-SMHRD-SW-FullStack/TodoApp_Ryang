@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const CheckBox = () => {
+const CheckBox = (state, setState, index) => {
+
+  
+  
   return (
-    <div>CheckBox</div>
+    <div>
+        <input type="checkbox" onClick={handleCheck}/>
+    </div>
   )
 }
 
