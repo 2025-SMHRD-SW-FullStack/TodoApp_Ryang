@@ -27,7 +27,7 @@ const CheckBox = ({ todos, item, index, setTodos }) => {
   return (
     <div>
       <input type="checkbox" onChange={handleCheck} />
-      {item}
+      
     </div>
   );
 };
