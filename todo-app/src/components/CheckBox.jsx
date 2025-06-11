@@ -8,22 +8,21 @@ const CheckBox = ({ todos, item, index, setTodos }) => {
       if (idx === index) {
         
         if (isChecked) {
-          return <del>{getTextOnly(data)}</del>;
+          return <del>{data}</del>;
         } else {
           
-          return getTextOnly(data);
+          return data.props.children;
         }
       }
       return data;
+      
     });
 
     setTodos(updatedTodos);
   };
 
   
-  const getTextOnly = (data) => {
-    return typeof data === 'string' ? data : data.props?.children || '';
-  };
+  
 
   return (
     <div>
